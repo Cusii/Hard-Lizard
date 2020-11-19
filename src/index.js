@@ -1,11 +1,12 @@
 let homePage = require('./homePage')
 const sucursales = require("./sucursales")
 const enCartelera = require('./enCartelera')
+const masVotadas = require("./masVotadas")
 
 let movies = homePage.leerJSON()
 let teatros = sucursales.leerJSON()
 let cartelera=enCartelera.leerJSON()
-
+let votadas = masVotadas.leerJSON()
 
 
 
@@ -69,6 +70,16 @@ module.exports = {
         res.end()
 
 
+    },
+
+    masVotadas: function(req, res){
+        res.write("---Mas Votadas---")
+        res.write("\n\n")
+        res.write("Cantidad de pelicula "  + masVotadas.mayor7().length )
+        res.write("\n\n")
+        res.write("El rating promedio es " + masVotadas.ratinAvg())
+        res.end()
     }
+
   
 }
