@@ -18,6 +18,9 @@ module.exports = function(req, res) {
         case '/preguntas-frecuentes':
             index.prefuntasFrecuentes(req, res)
             break;
+        case "/mas-votadas":
+            index.masVotadas(req, res)   
+            break;
         default:
             break;
     }
