@@ -12,6 +12,9 @@ module.exports = function(req,res){
         case '/sucursales':
             index.sucursales(req,res)
             break;
+        case '/contacto':
+            index.contacto(req,res)
+            break;
         default:
             break;
     }
