@@ -51,14 +51,14 @@ module.exports = {
         res.end()
     },
     enCartelera: function(req, res) {
-        res.write("En Cartelera")
+        res.write("  Eɴ Cᴀʀᴛᴇʟᴇʀᴀ")
         res.write("\n\n")
         res.write("Cantidad de pelicula " + movies.movies.length)
         res.write("\n\n")
         movies.movies.forEach(movie => {
-            res.write("---------")
+            res.write("˗ ˗ ˗ ˗ ˗")
             res.write(movie.title)
-            res.write("---------")
+            res.write("˗ ˗ ˗ ˗ ˗")
             res.write("\n\n")
             res.write(movie.overview + '\n')
             res.write("\n\n")
