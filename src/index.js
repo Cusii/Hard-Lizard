@@ -10,7 +10,7 @@ let teatros = sucursales.leerJSON()
 let cartelera = enCartelera.leerJSON()
 let votadas = masVotadas.leerJSON()
 let preguntasFrecuentes = preFrecuentes.leerJSON()
-
+let mayor7 = masVotadas.mayor7()
 
 
 module.exports = {
@@ -115,6 +115,17 @@ module.exports = {
         res.write("Cantidad de pelicula " + masVotadas.mayor7().length)
         res.write("\n\n")
         res.write("El rating promedio es " + masVotadas.ratinAvg())
+        res.write("\n\n")
+        movies.movies.forEach(movie => {
+            if (movie.vote_average>=7) {
+                res.write('- ' + movie.title + '\n\n')
+                res.write('- ' + movie.vote_average + '\n\n')
+                res.write('- ' + movie.overview + '\n\n')
+            }
+            
+        });
+
+
         res.end()
     },
   
