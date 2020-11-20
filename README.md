@@ -3,4 +3,8 @@
 ## Integrantes:
 - David Cusi
 - Florencia Rodriguez
+- Luis Ojeda
+- Gabriel Ayala
+- Rubén Lopez Galeano
+- Jose Flores 
 
