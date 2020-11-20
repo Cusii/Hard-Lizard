@@ -1,6 +1,6 @@
 # Grupo numero 4
 ## Trabajo: Hard Lizard
 ## Integrantes:
-- Fulano
-- Zutano
-- Mengano
+- David Cusi
+- Florencia Rodriguez
+

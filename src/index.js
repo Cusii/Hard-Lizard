@@ -80,6 +80,6 @@ module.exports = {
         res.write("El rating promedio es " + masVotadas.ratinAvg())
         res.end()
     }
-
-  
+    
+        
 }
